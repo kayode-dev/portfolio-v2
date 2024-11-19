@@ -5,7 +5,7 @@ interface LayoutSectionProps {
 }
 export const LayoutSection = ({ title, id, children }: LayoutSectionProps) => {
   return (
-    <div className="min-h-screen section" id={id}>
+    <div className="section w-full" id={id}>
       <h2>{title}</h2>
       {children}
     </div>

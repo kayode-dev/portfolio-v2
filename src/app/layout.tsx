@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.className} antialiased h-full w-full md:p-8 bg-gradient-to-b text-white from-teal-950 bg-fixed to-black/90 p-4`}
+        className={`${lato.className} antialiased h-full w-full md:p-8  text-white bg-neutral-900 bg-fixed  p-4`}
       >
-        <main className="w-3/4 mx-auto h-full">
+        <main className="md:w-3/5 mx-auto h-full">
           <Navbar />
           {children}
         </main>
