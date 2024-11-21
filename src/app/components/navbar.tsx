@@ -1,4 +1,8 @@
-import { MobileMenu } from "./mobile-menu";
+//import { MobileMenu } from "./mobile-menu";
+
+import Image from "next/image";
+import Link from "next/link";
+import navImage from "../assets/memojilightbulb.png";
 
 const SECTIONS = [
   { name: "#exp", location: "#exp" },
@@ -8,15 +12,22 @@ const SECTIONS = [
 ];
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between">
-      <p className="font-mono">ICON</p>
+    <div className="flex items-center justify-between md:mt-10">
+      <Link href="/">
+        <Image
+          src={navImage}
+          alt="kayode's memoji with a laptop"
+          width={70}
+          height={70}
+        />
+      </Link>
       <ul className="items-center gap-4 min-h-full hidden md:flex">
         {SECTIONS.map((section) => (
           <SectionPointers key={section.name} {...section} />
         ))}
       </ul>
-      <button className="size-8 bg-neutral-400">i</button>
-      <MobileMenu SECTIONS={SECTIONS} />
+      <button className="size-8 bg-neutral-400 md:hidden">i</button>
+      {/* <MobileMenu SECTIONS={SECTIONS} /> */}
     </div>
   );
 }
