@@ -1,4 +1,6 @@
 import { ExperienceProps } from "@/utils/types";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 const StackPill = ({ stack }: { stack: string }) => {
   return (
     <div className="flex items-center gap-2 rounded-lg border border-neutral-400 bg-neutral-800/60 px-4 py-1 text-sm">
@@ -9,8 +11,8 @@ const StackPill = ({ stack }: { stack: string }) => {
 export const ExperienceCard = ({ ...props }: ExperienceProps) => {
   return (
     <div className="space-y-4">
-      <div className="space-y-2 md:space-y-4 p-3 md:p-4 rounded-lg border border-transparent duration-500 ease-in hover:border-neutral-600 hover:bg-neutral-800/60">
-        <h2 className="text-lg md:text-xl font-semibold">
+      <div className="space-y-2 group md:space-y-4 p-3 md:p-4 rounded-lg border border-transparent duration-500 ease-in hover:border-neutral-600 hover:bg-neutral-800/60">
+        <h2 className="text-lg md:text-xl group-hover:text-sky-400  font-semibold">
           {props.jobTitle} · {props.companyName}
         </h2>
         <p className="uppercase text-neutral-400 text-sm">
@@ -67,10 +69,15 @@ const Experience: ExperienceProps[] = [
 
 export const ExperienceList = () => {
   return (
-    <div className="space-y-8">
-      {Experience.map((experience) => (
-        <ExperienceCard key={experience.companyName} {...experience} />
-      ))}
+    <div className="space-y-6">
+      <div className="space-y-8">
+        {Experience.map((experience) => (
+          <ExperienceCard key={experience.companyName} {...experience} />
+        ))}
+      </div>
+      <Link href="" className="flex items-center text-neutral-500 text-lg">
+        View Full Resume <ArrowUpRight />
+      </Link>
     </div>
   );
 };
