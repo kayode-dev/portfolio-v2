@@ -3,6 +3,7 @@ import Image from "next/image";
 import sideheroImage from "../app/assets/memojipeace.png";
 import kayode from "../app/assets/kayode.jpg";
 import { ExperienceList } from "./components/experience/experience-list";
+import { ProjectList } from "./components/project-list";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
                 src={kayode}
                 alt="Kayode Babalola"
                 className="w-full rounded-full"
+                placeholder="blur"
               />
             </div>
             <Image
@@ -23,6 +25,7 @@ export default function Home() {
               width={70}
               height={70}
               className="absolute bottom-0 right-0 z-10"
+              placeholder="blur"
             />
           </div>
           <div className="space-y-2">
@@ -39,14 +42,11 @@ export default function Home() {
         <LayoutSection id="exp" title="#exp">
           <ExperienceList />
         </LayoutSection>
-        <LayoutSection id="stack" title="#stack">
-          Stuff(Tech stack)
-        </LayoutSection>
-        <LayoutSection id="education" title="#education">
-          Stuff(Education)
-        </LayoutSection>
         <LayoutSection id="projects" title="#projects">
-          <p>Stuff (Projects)</p>
+          <ProjectList />
+        </LayoutSection>
+        <LayoutSection id="contact" title="#contact">
+          <p>Stuff(Education)</p>
         </LayoutSection>
       </div>
     </div>

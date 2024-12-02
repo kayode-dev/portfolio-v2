@@ -6,7 +6,6 @@ import navImage from "../assets/memojilightbulb.png";
 
 const SECTIONS = [
   { name: "#exp", location: "#exp" },
-  { name: "#stack", location: "#stack" },
   { name: "#projects", location: "#projects" },
   { name: "#contact", location: "#contact" },
 ];
@@ -19,6 +18,7 @@ export default function Navbar() {
           alt="kayode's memoji with a laptop"
           width={70}
           height={70}
+          placeholder="blur"
         />
       </Link>
       <ul className="items-center gap-4 min-h-full hidden md:flex">

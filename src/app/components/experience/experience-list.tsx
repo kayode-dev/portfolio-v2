@@ -16,7 +16,7 @@ export const ExperienceCard = ({ ...props }: ExperienceProps) => {
           {props.jobTitle} · {props.companyName}
         </h2>
         <p className="uppercase text-neutral-400 text-sm">
-          {props.startDate} - {props.endDate}
+          {props.employmentType} · {props.startDate} - {props.endDate}
         </p>
         <p>{props.description}</p>
 
@@ -34,8 +34,9 @@ const Experience: ExperienceProps[] = [
   {
     companyName: "Jetron Ticket",
     jobTitle: "Frontend Developer",
-    startDate: "Mar 2024",
+    startDate: "June 2024",
     endDate: "Present",
+    employmentType: "Full time",
     description: "sumn sumn sumn",
     link: "sumn",
     stacks: [
@@ -49,9 +50,10 @@ const Experience: ExperienceProps[] = [
   },
   {
     companyName: "Ardels",
-    jobTitle: "Frontend Developer",
-    startDate: "Nov 2022",
-    endDate: "Mar 2023",
+    jobTitle: "Frontend Developer (Contract)",
+    startDate: "Mar 2024",
+    endDate: "June 2024",
+    employmentType: "Part time",
     description: "sumn sumn sumn",
     link: "sumn",
     stacks: ["NEXT.js", "React", "TailwindCSS", "TypeScript", "JavaScript"],
@@ -61,9 +63,10 @@ const Experience: ExperienceProps[] = [
     jobTitle: "Frontend Developer",
     startDate: "Nov 2022",
     endDate: "Mar 2024",
+    employmentType: "Full time",
     description: "sumn sumn sumn",
     link: "sumn",
-    stacks: ["Blazor", "C#", "React", "Next.js", "TailwindCSS"],
+    stacks: ["Blazor", "C#", "React", "Next.js", "TailwindCSS", "Bootstrap"],
   },
 ];
 
