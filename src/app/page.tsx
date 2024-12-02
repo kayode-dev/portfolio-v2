@@ -4,6 +4,7 @@ import sideheroImage from "../app/assets/memojipeace.png";
 import kayode from "../app/assets/kayode.jpg";
 import { ExperienceList } from "./components/experience/experience-list";
 import { ProjectList } from "./components/project-list";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -46,7 +47,21 @@ export default function Home() {
           <ProjectList />
         </LayoutSection>
         <LayoutSection id="contact" title="#contact">
-          <p>Stuff(Education)</p>
+          <Link href={"mailto:babalolakayode44@gmail.com"}>
+            babalolakayode44@gmail.com
+          </Link>
+        </LayoutSection>
+        <LayoutSection id="listening" title="now listening...">
+          <iframe
+            title="spotify playlist"
+            className="rounded-2xl"
+            src="https://open.spotify.com/embed/playlist/3g1wkGVS4b2vuhrTEOKGej?utm_source=generator"
+            width="100%"
+            height="352"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            id="player"
+          ></iframe>
         </LayoutSection>
       </div>
     </div>

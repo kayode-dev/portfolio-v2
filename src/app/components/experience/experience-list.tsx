@@ -1,7 +1,8 @@
 import { ExperienceProps } from "@/utils/types";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-const StackPill = ({ stack }: { stack: string }) => {
+
+export const StackPill = ({ stack }: { stack: string }) => {
   return (
     <div className="flex items-center gap-2 rounded-lg border border-neutral-400 bg-neutral-800/60 px-4 py-1 text-sm">
       {stack}
@@ -12,7 +13,7 @@ export const ExperienceCard = ({ ...props }: ExperienceProps) => {
   return (
     <div className="space-y-4">
       <div className="space-y-2 group md:space-y-4 p-3 md:p-4 rounded-lg border border-transparent duration-500 ease-in hover:border-neutral-600 hover:bg-neutral-800/60">
-        <h2 className="text-lg md:text-xl group-hover:text-sky-400  font-semibold">
+        <h2 className="text-lg md:text-xl group-hover:text-sky-400 duration-500 font-semibold">
           {props.jobTitle} · {props.companyName}
         </h2>
         <p className="uppercase text-neutral-400 text-sm">
