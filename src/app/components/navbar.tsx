@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import navImage from "../assets/memojilightbulb.png";
+import { Menu } from "lucide-react";
 
 const SECTIONS = [
   { name: "#exp", location: "#exp" },
@@ -26,7 +27,9 @@ export default function Navbar() {
           <SectionPointers key={section.name} {...section} />
         ))}
       </ul>
-      <button className="size-8 bg-neutral-400 md:hidden">i</button>
+      <button className="size-10 bg-neutral-800/50 flex justify-center rounded-md items-center md:hidden">
+        <Menu />
+      </button>
       {/* <MobileMenu SECTIONS={SECTIONS} /> */}
     </div>
   );

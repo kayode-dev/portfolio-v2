@@ -30,13 +30,18 @@ export default function Home() {
             />
           </div>
           <div className="space-y-2">
-            <h2 className="text-2xl md:text-5xl font-bold">Kayode Babalola</h2>
+            <h2 className="text-3xl md:text-5xl font-bold">Kayode Babalola</h2>
             <p className="md:text-xl text-neutral-400">Frontend Developer🏌🏾‍♂️</p>
             <p className="text-base md:text-balance md:text-lg">
-              Hello! Im Kayode, a Front-end developer who loves implementing
-              web-designs, meeting clients expectations and can easily center my
-              div&apos;s. I am a self-taught developer who has been programming,
-              hence my underlying interest in becoming a Fullstack Developer.
+              I am a frontend developer with over three years of experience,
+              specializing in React.js and Next.js. I’m also proficient with
+              Microsoft frameworks like Blazor and Razor Pages. While I
+              currently focus on frontend development, I have a strong interest
+              in expanding my skills to become a fullstack developer. I thrive
+              on solving problems, learning new technologies, and creating
+              seamless, user-friendly web experiences. I enjoy tackling
+              challenges, exploring innovative solutions, and continuously
+              expanding my knowledge to grow as a developer.
             </p>
           </div>
         </div>

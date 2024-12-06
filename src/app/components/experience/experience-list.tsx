@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const StackPill = ({ stack }: { stack: string }) => {
   return (
-    <div className="flex items-center gap-2 rounded-lg border border-neutral-400 bg-neutral-800/60 px-4 py-1 text-sm">
+    <div className="flex items-center gap-2 rounded-lg border border-neutral-600/50 bg-neutral-800/60 px-4 py-1 text-sm">
       {stack}
     </div>
   );
@@ -38,7 +38,8 @@ const Experience: ExperienceProps[] = [
     startDate: "June 2024",
     endDate: "Present",
     employmentType: "Full time",
-    description: "sumn sumn sumn",
+    description:
+      "I have designed and developed high-performance websites using Next.js, delivering fast and seamless user experiences. Through collaboration with backend developers, I ensured smooth data integration and reliable functionality. By implementing features and application flows based on UI/UX designs, I contributed to improved user engagement. I consistently explore new technologies to enhance project efficiency and actively participate in code reviews and team knowledge sharing to drive continuous improvement",
     link: "sumn",
     stacks: [
       "NEXT.js",

@@ -7,11 +7,11 @@ import Link from "next/link";
 import { Github } from "lucide-react";
 const ProjectCard = ({ ...props }: ProjectProps) => {
   return (
-    <div className="flex gap-5 w-full p-4 rounded-lg">
+    <div className="flex flex-col md:flex-row gap-5 w-full p-4 rounded-lg">
       <Image
         src={props.image}
         alt=""
-        className="w-52 rounded-lg"
+        className="md:w-52 rounded-lg object-cover"
         placeholder="blur"
       />
       <div className="space-y-4  w-full">
