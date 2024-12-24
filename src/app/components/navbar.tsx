@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import navImage from "../assets/memojilightbulb.png";
-import { Menu } from "lucide-react";
 
 const SECTIONS = [
   { name: "#exp", location: "#exp" },
@@ -17,19 +16,18 @@ export default function Navbar() {
         <Image
           src={navImage}
           alt="kayode's memoji with a laptop"
-          width={70}
-          height={70}
+          className="h-16 w-16 hidden md:block"
           placeholder="blur"
         />
       </Link>
-      <ul className="items-center gap-4 min-h-full hidden md:flex">
+      <ul className="items-center gap-4 min-h-full flex">
         {SECTIONS.map((section) => (
           <SectionPointers key={section.name} {...section} />
         ))}
       </ul>
-      <button className="size-10 bg-neutral-800/50 flex justify-center rounded-md items-center md:hidden">
+      {/* <button className="size-10 bg-neutral-800/50 flex justify-center rounded-md items-center md:hidden">
         <Menu />
-      </button>
+      </button> */}
       {/* <MobileMenu SECTIONS={SECTIONS} /> */}
     </div>
   );

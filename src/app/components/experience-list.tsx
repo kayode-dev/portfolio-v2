@@ -19,7 +19,7 @@ export const ExperienceCard = ({ ...props }: ExperienceProps) => {
         <p className="uppercase text-neutral-400 text-sm">
           {props.employmentType} · {props.startDate} - {props.endDate}
         </p>
-        <p>{props.description}</p>
+        <p className="leading-relaxed md:text-lg">{props.description}</p>
 
         <div className="flex flex-wrap gap-2">
           {props.stacks.map((stack) => (
@@ -39,7 +39,7 @@ const Experience: ExperienceProps[] = [
     endDate: "Present",
     employmentType: "Full time",
     description:
-      "I have designed and developed high-performance websites using Next.js, delivering fast and seamless user experiences. Through collaboration with backend developers, I ensured smooth data integration and reliable functionality. By implementing features and application flows based on UI/UX designs, I contributed to improved user engagement. I consistently explore new technologies to enhance project efficiency and actively participate in code reviews and team knowledge sharing to drive continuous improvement",
+      "I developed high-performance webpages using Next.js, delivering fast and seamless user experiences. Through collaboration with backend developers, I ensured smooth data integration and reliable functionality. By implementing features and application flows based on UI/UX designs, I contributed to improved user engagement. I consistently explore new technologies to enhance project efficiency and actively participate in code reviews and team knowledge sharing to drive continuous improvement",
     link: "sumn",
     stacks: [
       "NEXT.js",
@@ -56,7 +56,8 @@ const Experience: ExperienceProps[] = [
     startDate: "Mar 2024",
     endDate: "June 2024",
     employmentType: "Part time",
-    description: "sumn sumn sumn",
+    description:
+      "I took full ownership of the frontend development for this project, building a scalable and responsive application from using Next.js. I carefully selected packages and tools to create an optimal tech stack that balanced performance, maintainability, and efficiency. Collaborating closely with backend developers and stakeholders, I aligned the frontend implementation with project goals and business needs. I designed reusable components and streamlined workflows to improve development efficiency and ensure consistent code quality. Additionally, I tackled technical challenges, demonstrating strong problem-solving skills and a proactive approach to meeting deadlines.",
     link: "sumn",
     stacks: ["NEXT.js", "React", "TailwindCSS", "TypeScript", "JavaScript"],
   },
@@ -66,7 +67,8 @@ const Experience: ExperienceProps[] = [
     startDate: "Nov 2022",
     endDate: "Mar 2024",
     employmentType: "Full time",
-    description: "sumn sumn sumn",
+    description:
+      "I collaborated with cross-functional teams to develop workflows and scripts using Next.js, Blazor WASM, and Minimal API. I provided technical support to clients, handling system updates and addressing inquiries efficiently. I engineered an in-house product using Blazor, Entra ID, and Minimal API to streamline processing client complaints and requests, significantly improving client satisfaction. Additionally, I created automation scripts for backup and restore processes in company products using JavaScript, enabling faster resolution of client issues.",
     link: "sumn",
     stacks: ["Blazor", "C#", "React", "Next.js", "TailwindCSS", "Bootstrap"],
   },
@@ -80,7 +82,11 @@ export const ExperienceList = () => {
           <ExperienceCard key={experience.companyName} {...experience} />
         ))}
       </div>
-      <Link href="" className="flex items-center text-neutral-500 text-lg">
+      <Link
+        href="https://docs.google.com/document/d/1lpm_fKDfbpaVqLn2wSG3UJ491TFyDZKoHFzKEQH7KPs/edit?usp=sharing"
+        target="_blank"
+        className="flex items-center text-neutral-500 text-lg"
+      >
         View Full Resume <ArrowUpRight />
       </Link>
     </div>
