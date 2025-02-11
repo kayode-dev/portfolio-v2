@@ -1,25 +1,25 @@
-import { ExperienceProps } from "@/utils/types";
+import { ExperienceProps } from "@/lib/types";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export const StackPill = ({ stack }: { stack: string }) => {
   return (
-    <div className="flex items-center gap-2 rounded-lg border border-neutral-600/50 bg-neutral-800/60 px-4 py-1 text-sm">
+    <div className="flex items-center gap-2 rounded-lg border border-neutral-600/50 bg-neutral-800/60 px-4 py-1 text-xs">
       {stack}
     </div>
   );
 };
 export const ExperienceCard = ({ ...props }: ExperienceProps) => {
   return (
-    <div className="space-y-4">
-      <div className="space-y-2 group md:space-y-4 p-3 md:p-4 rounded-lg border border-transparent duration-500 ease-in hover:border-neutral-600 hover:bg-neutral-800/60">
+    <div className="space-y-8">
+      <div className="space-y-2 box-border group md:space-y-6">
         <h2 className="text-lg md:text-xl group-hover:text-sky-400 duration-500 font-semibold">
           {props.jobTitle} · {props.companyName}
         </h2>
         <p className="uppercase text-neutral-400 text-sm">
           {props.employmentType} · {props.startDate} - {props.endDate}
         </p>
-        <p className="leading-relaxed md:text-lg">{props.description}</p>
+        <p className="leading-relaxed">{props.description}</p>
 
         <div className="flex flex-wrap gap-2">
           {props.stacks.map((stack) => (
@@ -34,7 +34,7 @@ export const ExperienceCard = ({ ...props }: ExperienceProps) => {
 const Experience: ExperienceProps[] = [
   {
     companyName: "Jetron Ticket",
-    jobTitle: "Frontend Developer",
+    jobTitle: "Frontend Engineer",
     startDate: "June 2024",
     endDate: "Present",
     employmentType: "Full time",
@@ -52,18 +52,18 @@ const Experience: ExperienceProps[] = [
   },
   {
     companyName: "Ardels",
-    jobTitle: "Frontend Developer (Contract)",
+    jobTitle: "Frontend Engineer (Contract)",
     startDate: "Mar 2024",
     endDate: "June 2024",
     employmentType: "Part time",
     description:
-      "I took full ownership of the frontend development for this project, building a scalable and responsive application from using Next.js. I carefully selected packages and tools to create an optimal tech stack that balanced performance, maintainability, and efficiency. Collaborating closely with backend developers and stakeholders, I aligned the frontend implementation with project goals and business needs. I designed reusable components and streamlined workflows to improve development efficiency and ensure consistent code quality. Additionally, I tackled technical challenges, demonstrating strong problem-solving skills and a proactive approach to meeting deadlines.",
+      "I took full ownership of the frontend development for this project, building a scalable and responsive application from using Next.js. I carefully selected packages and tools to create an optimal tech stack that balanced performance, maintainability, and efficiency. Collaborating closely with backend developers and stakeholders, I aligned the frontend implementation with project goals and business needs. I designed reusable components and streamlined workflows to improve development efficiency and ensure consistent code quality.",
     link: "sumn",
-    stacks: ["NEXT.js", "React", "TailwindCSS", "TypeScript", "JavaScript"],
+    stacks: ["Next.js", "React", "TailwindCSS", "TypeScript", "JavaScript"],
   },
   {
     companyName: "R3 Consulting Ltd",
-    jobTitle: "Frontend Developer",
+    jobTitle: "Frontend Engineer",
     startDate: "Nov 2022",
     endDate: "Mar 2024",
     employmentType: "Full time",

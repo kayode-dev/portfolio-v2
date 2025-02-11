@@ -53,7 +53,7 @@ export default function Home() {
           <ProjectList />
         </LayoutSection>
         <LayoutSection id="contact" title="#contact">
-          <div className="flex flex-col gap-4 md:gap-8 text-neutral-400 text-lg md:text-xl">
+          <div className="flex flex-col gap-4 md:gap-8 text-neutral-400 text-lg">
             <Link
               href="mailto:babalolakayode44@gmail.com"
               target="_blank"
@@ -62,14 +62,7 @@ export default function Home() {
               <ArrowUpRight />
               babalolakayode44@gmail.com
             </Link>
-            <Link
-              href="https://calendly.com/babalolakayode44/coffee-chat"
-              target="_blank"
-              className="flex items-center gap-2 underline-offset-4 underline"
-            >
-              <ArrowUpRight />
-              Coffee Chat
-            </Link>
+
             <Link
               href="https://www.linkedin.com/in/kayodedev/"
               target="_blank"

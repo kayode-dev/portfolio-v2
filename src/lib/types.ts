@@ -18,4 +18,5 @@ export interface ProjectProps {
   liveUrl: string;
   githubUrl: string;
   stacks: string[];
+  comingSoon?: boolean;
 }
