@@ -1,5 +1,3 @@
-//import { MobileMenu } from "./mobile-menu";
-
 import Image from "next/image";
 import Link from "next/link";
 import navImage from "../assets/memojilightbulb.png";
@@ -41,7 +39,7 @@ export const SectionPointers = ({ name, location }: SectionPointerProps) => {
   return (
     <li className="flex flex-col items-start">
       <a href={location} className="group flex gap-1 items-center">
-        <span className="nav-indicator mr-2 h-px w-6 bg-white/50 transition-all group-hover:w-12 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none duration-300"></span>
+        <span className="mr-2 h-px w-6 bg-white/50 transition-all group-hover:w-12 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none duration-300"></span>
         <p className="text-white/50 group-hover:text-white">{name}</p>
       </a>
     </li>

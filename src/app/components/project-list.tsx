@@ -69,7 +69,7 @@ const PROJECTS: ProjectProps[] = [
     image: rundwn,
     liveUrl: "https://rundwn.kayodedev.com/",
     githubUrl: "https://github.com/kayode-dev/wrapped-anytime",
-    stacks: ["React", "Next.js", "Tailwind CSS"],
+    stacks: ["React", "Tailwind CSS"],
   },
   {
     title: "Tic-Tac-Toe",
@@ -78,7 +78,7 @@ const PROJECTS: ProjectProps[] = [
     image: xno,
     liveUrl: "https://xno.kayodedev.com/",
     githubUrl: "https://github.com/kayode-dev/tic-tac-toe",
-    stacks: ["React", "Next.js", "Tailwind CSS"],
+    stacks: ["React", "Vite", "Tailwind CSS"],
   },
   {
     title: "dualmind AI",
