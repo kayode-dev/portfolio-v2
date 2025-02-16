@@ -87,7 +87,7 @@ const PROJECTS: ProjectProps[] = [
     image: rundwn,
     liveUrl: "#",
     githubUrl: "https://github.com/kayode-dev/dualmind",
-    stacks: ["React", "Next.js", "Tailwind CSS"],
+    stacks: [],
     comingSoon: true,
   },
 ];
