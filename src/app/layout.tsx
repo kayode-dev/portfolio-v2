@@ -14,7 +14,8 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Kayode Babalola",
-  description: "This is Kayode Babalola",
+  description: "Hi there, I am Kayode Babalola - Frontend Engineer",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({

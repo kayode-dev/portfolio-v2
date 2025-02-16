@@ -74,7 +74,7 @@ const PROJECTS: ProjectProps[] = [
   {
     title: "Tic-Tac-Toe",
     description:
-      "A multiplayer Tic-Tac-Toe game that tracks grid locations using a two-dimensional array and evaluates win conditions with a predefined array of possible combinations. The winner is displayed via the browser's alert system",
+      "A multiplayer Tic-Tac-Toe game, tracking grid locations using a two-dimensional array and evaluates win conditions with a predefined array of possible combinations. The winner is displayed via the browser's alert system",
     image: xno,
     liveUrl: "https://xno.kayodedev.com/",
     githubUrl: "https://github.com/kayode-dev/tic-tac-toe",
