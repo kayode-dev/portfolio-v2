@@ -43,10 +43,10 @@ const Experience: ExperienceProps[] = [
     link: "sumn",
     stacks: [
       "NEXT.js",
-      "React",
       "TailwindCSS",
       "TypeScript",
-      "JavaScript",
+      "Apollo Client",
+      "Graph QL",
       "HeadlessUI",
     ],
   },
@@ -59,7 +59,7 @@ const Experience: ExperienceProps[] = [
     description:
       "I took full ownership of the frontend development for this project, building a scalable and responsive application from using Next.js. I carefully selected packages and tools to create an optimal tech stack that balanced performance, maintainability, and efficiency. Collaborating closely with backend developers and stakeholders, I aligned the frontend implementation with project goals and business needs. I designed reusable components and streamlined workflows to improve development efficiency and ensure consistent code quality.",
     link: "sumn",
-    stacks: ["Next.js", "React", "TailwindCSS", "TypeScript", "JavaScript"],
+    stacks: ["Next.js", "TailwindCSS", "TypeScript", "Tanstack(React Query)"],
   },
   {
     companyName: "R3 Consulting Ltd",
@@ -70,7 +70,16 @@ const Experience: ExperienceProps[] = [
     description:
       "I collaborated with cross-functional teams to develop workflows and scripts using Next.js, Blazor WASM, and Minimal API. I provided technical support to clients, handling system updates and addressing inquiries efficiently. I engineered an in-house product using Blazor, Entra ID, and Minimal API to streamline processing client complaints and requests, significantly improving client satisfaction. Additionally, I created automation scripts for backup and restore processes in company products using JavaScript, enabling faster resolution of client issues.",
     link: "sumn",
-    stacks: ["Blazor", "C#", "React", "Next.js", "TailwindCSS", "Bootstrap"],
+    stacks: [
+      "Blazor",
+      "C#",
+      "React",
+      "Javascript",
+      "Typescript",
+      "TailwindCSS",
+      "Bootstrap",
+      "Bulma",
+    ],
   },
 ];
 
