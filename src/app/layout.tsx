@@ -15,7 +15,6 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Kayode Babalola",
   description: "Hi there, I am Kayode Babalola - Frontend Engineer",
-  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
@@ -26,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.className} antialiased h-full w-full md:p-8  text-neutral-200 bg-neutral-900 bg-fixed  pb-0`}
+        className={`${raleway.className} antialiased h-full w-full md:p-8  text-neutral-200 bg-neutral-950 bg-fixed  pb-0`}
       >
         <main className=" p-4 md:p-0 md:w-3/5 mx-auto flex flex-col justify-between h-screen">
           <Navbar />

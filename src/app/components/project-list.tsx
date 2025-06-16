@@ -1,6 +1,8 @@
 import { ProjectProps } from "@/lib/types";
 import Image from "next/image";
+import dualmind from "@/app/assets/projects/dualmind.png";
 import rundwn from "@/app/assets/projects/rundwn.png";
+import loveiswar from "@/app/assets/projects/loveiswar.png";
 import xno from "@/app/assets/projects/xno.png";
 import { StackPill } from "./experience-list";
 import Link from "next/link";
@@ -11,7 +13,7 @@ const ProjectCard = ({ ...props }: ProjectProps) => {
   return (
     <div className="space-y-4">
       <div className="flex flex-col md:flex-row rounded-lg group gap-5 w-full items-center p-4 overflow-hidden border border-neutral-800 drop-shadow-lg duration-300 bg-neutral-800/60">
-        <div className="relative rounded-lg overflow-hidden">
+        <div className="relative rounded-lg overflow-hidden md:w-4/5">
           <Image
             src={props.image}
             alt={props.title}
@@ -63,6 +65,15 @@ const ProjectCard = ({ ...props }: ProjectProps) => {
 
 const PROJECTS: ProjectProps[] = [
   {
+    title: "dualmind",
+    description:
+      "An AI-powered chatbot built with the ChatGPT-3.5 Turbo API and Google Gemini's API to handle prompts and generate images. This project highlights the capabilities of both AI models, showcasing how prompt structure influences responses and outputs.",
+    image: dualmind,
+    liveUrl: "#",
+    githubUrl: "https://github.com/kayode-dev/dualmind",
+    stacks: [],
+  },
+  {
     title: "Rundwn",
     description:
       "Rundwn is a web app that uses the Spotify API to provide on-demand insights into users' listening habits. It highlights top artists and activity over the past month, six months, and year, offering a seamless and interactive experience inspired by Spotify Wrapped.",
@@ -72,6 +83,15 @@ const PROJECTS: ProjectProps[] = [
     stacks: ["React", "Tailwind CSS"],
   },
   {
+    title: "Love is War",
+    description:
+      "Promotional website for the release of the Love is War Ep by Starsamm",
+    image: loveiswar,
+    liveUrl: "https://loveiswar.world/",
+    githubUrl: "https://github.com/kayode-dev/loveiswar",
+    stacks: ["React", "Tailwind CSS", "GSAP", "Neon"],
+  },
+  {
     title: "Tic-Tac-Toe",
     description:
       "A multiplayer Tic-Tac-Toe game, tracking grid locations using a two-dimensional array and evaluates win conditions with a predefined array of possible combinations. The winner is displayed via the browser's alert system",
@@ -79,16 +99,6 @@ const PROJECTS: ProjectProps[] = [
     liveUrl: "https://xno.kayodedev.com/",
     githubUrl: "https://github.com/kayode-dev/tic-tac-toe",
     stacks: ["React", "Vite", "Tailwind CSS"],
-  },
-  {
-    title: "dualmind AI",
-    description:
-      "An AI-powered chatbot built with the ChatGPT-3.5 Turbo API and Google Gemini's API to handle prompts and generate images. This project highlights the capabilities of both AI models, showcasing how prompt structure influences responses and outputs.",
-    image: rundwn,
-    liveUrl: "#",
-    githubUrl: "https://github.com/kayode-dev/dualmind",
-    stacks: [],
-    comingSoon: true,
   },
 ];
 

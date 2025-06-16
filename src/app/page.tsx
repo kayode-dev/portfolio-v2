@@ -1,11 +1,15 @@
 import { LayoutSection } from "./components/layout-section";
 import Image from "next/image";
 import sideheroImage from "../app/assets/memojipeace.png";
-import kayode from "../app/assets/kayode.jpg";
+import kayode from "../app/assets/kayode.png";
 import { ExperienceList } from "./components/experience-list";
 import { ProjectList } from "./components/project-list";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import memoiChefKiss from "@/app/assets/memojichefkiss.png";
+import memojiLaptop from "@/app/assets/memojiwlaptop.png";
+import memojiContact from "@/app/assets/memojicontact.png";
+import memojiEuphoria from "@/app/assets/memojieuphoria.png";
 
 export default function Home() {
   return (
@@ -17,7 +21,7 @@ export default function Home() {
               <Image
                 src={kayode}
                 alt="Kayode Babalola"
-                className="w-full rounded-full"
+                className="w-full h-full rounded-full object-cover"
                 placeholder="blur"
               />
             </div>
@@ -46,13 +50,21 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <LayoutSection id="exp" title="#exp">
+        <LayoutSection id="exp" title="#exp" sectionMemoji={memoiChefKiss}>
           <ExperienceList />
         </LayoutSection>
-        <LayoutSection id="projects" title="#projects">
+        <LayoutSection
+          id="projects"
+          title="#projects"
+          sectionMemoji={memojiLaptop}
+        >
           <ProjectList />
         </LayoutSection>
-        <LayoutSection id="contact" title="#contact">
+        <LayoutSection
+          id="contact"
+          title="#contact"
+          sectionMemoji={memojiContact}
+        >
           <div className="flex flex-col gap-4 md:gap-8 text-neutral-400 text-lg">
             <Link
               href="mailto:babalolakayode44@gmail.com"
@@ -73,11 +85,15 @@ export default function Home() {
             </Link>
           </div>
         </LayoutSection>
-        <LayoutSection id="listening" title="now listening...">
+        <LayoutSection
+          id="listening"
+          title="now listening..."
+          sectionMemoji={memojiEuphoria}
+        >
           <iframe
             title="spotify playlist"
             className="rounded-2xl"
-            src="https://open.spotify.com/embed/playlist/3g1wkGVS4b2vuhrTEOKGej?utm_source=generator"
+            src="https://open.spotify.com/embed/playlist/0CYzNaAssWPRfIi6tJZUK7?utm_source=generator"
             width="100%"
             height="352"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
