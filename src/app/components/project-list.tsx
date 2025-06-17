@@ -69,7 +69,7 @@ const PROJECTS: ProjectProps[] = [
     description:
       "An AI-powered chatbot built with the ChatGPT-3.5 Turbo API and Google Gemini's API to handle prompts and generate images. This project highlights the capabilities of both AI models, showcasing how prompt structure influences responses and outputs.",
     image: dualmind,
-    liveUrl: "#",
+    liveUrl: "https://dualmind.kayodedev.com",
     githubUrl: "https://github.com/kayode-dev/dualmind",
     stacks: [],
   },
