@@ -15,6 +15,29 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Kayode Babalola",
   description: "Hi there, I am Kayode Babalola - Frontend Engineer",
+  openGraph: {
+    title: "Kayode Babalola",
+    description: "Hi there, I am Kayode Babalola - Frontend Engineer",
+    url: "https://kayodedev.com",
+    siteName: "Kayode Babalola",
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Kayode Babalola",
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
