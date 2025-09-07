@@ -6,6 +6,7 @@ export interface ExperienceProps {
   startDate: string;
   endDate: string;
   employmentType: string;
+  points?: string[];
   description: string;
   link: string;
   stacks: string[];
@@ -16,7 +17,7 @@ export interface ProjectProps {
   image: StaticImageData;
   description: string;
   liveUrl: string;
-  githubUrl: string;
+  githubUrl?: string;
   stacks: string[];
   comingSoon?: boolean;
 }
