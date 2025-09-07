@@ -10,21 +10,30 @@ export const StackPill = ({ stack }: { stack: string }) => {
     </div>
   );
 };
-export const ExperienceCard = ({ ...props }: ExperienceProps) => {
+export const ExperienceCard = ({
+  jobTitle,
+  companyName,
+  employmentType,
+  startDate,
+  endDate,
+  description,
+  points,
+  stacks,
+}: ExperienceProps) => {
   return (
     <div className="space-y-8">
       <div className="space-y-3 box-border group md:space-y-6">
         <h2 className="text-lg md:text-xl group-hover:text-sky-400 duration-500 font-semibold">
-          {props.jobTitle} · {props.companyName}
+          {jobTitle} · {companyName}
         </h2>
         <p className="uppercase text-neutral-400 text-sm">
-          {props.employmentType} · {props.startDate} - {props.endDate}
+          {employmentType} · {startDate} - {endDate}
         </p>
         <p className="leading-relaxed font-medium text-neutral-400 text-sm md:text-lg">
-          {props.description}
+          {description}
         </p>
         <ul className="space-y-3 list-disc list-outside text-sm md:text-base pl-5 text-neutral-400">
-          {props.points?.map((p) => (
+          {points?.map((p) => (
             <li key={p} className="">
               {p}
             </li>
@@ -32,7 +41,7 @@ export const ExperienceCard = ({ ...props }: ExperienceProps) => {
         </ul>
 
         <div className="flex flex-wrap gap-2">
-          {props.stacks.map((stack) => (
+          {stacks.map((stack) => (
             <StackPill key={stack} stack={stack} />
           ))}
         </div>
