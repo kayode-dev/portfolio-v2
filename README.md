@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kayode Babalola - Portfolio v2
 
-## Getting Started
+A modern, responsive portfolio website showcasing my experience as a Frontend Developer and featuring my projects, skills, and professional journey.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Visit the live portfolio: [kayodedev.com](https://kayodedev.com)
+
+## ✨ Features
+
+- **Modern Design**: Clean, minimalist interface with smooth animations
+- **Responsive Layout**: Optimized for all device sizes
+- **Interactive Sections**:
+  - Professional experience timeline
+  - Featured projects with live demos
+  - Contact information with direct links
+  - Currently listening to music (Spotify integration)
+- **Performance Optimized**: Built with Next.js 15 and React 19
+- **TypeScript**: Fully typed for better development experience
+- **Tailwind CSS**: Utility-first styling with custom components
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **UI Components**: Custom components with [Class Variance Authority](https://cva.style/)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/
+│   ├── components/          # Reusable UI components
+│   │   ├── experience-list.tsx
+│   │   ├── project-list.tsx
+│   │   ├── navbar.tsx
+│   │   └── ...
+│   ├── assets/             # Images and static assets
+│   │   ├── icons/
+│   │   └── projects/
+│   └── page.tsx            # Main portfolio page
+├── lib/
+│   ├── constants.ts        # Project and experience data
+│   ├── types.ts           # TypeScript type definitions
+│   └── utils.ts           # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+
+- pnpm (recommended) or npm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/kayode-dev/portfolio-v2.git
+   cd portfolio-v2
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
 
-## Deploy on Vercel
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the portfolio.
+
+## 📝 Customization
+
+### Adding New Projects
+
+Edit `src/lib/constants.ts` to add new projects to the `PROJECTS` array:
+
+```typescript
+{
+  title: "Project Name",
+  description: "Project description...",
+  image: projectImage,
+  liveUrl: "https://project-url.com",
+  githubUrl: "https://github.com/username/repo", // optional
+  stacks: ["React", "Next.js", "TypeScript"],
+}
+```
+
+### Updating Experience
+
+Modify the `EXPERIENCE` array in `src/lib/constants.ts` to update your professional experience.
+
+### Styling
+
+The project uses Tailwind CSS for styling. Custom styles can be added in `src/app/globals.css` or by extending the Tailwind configuration in `tailwind.config.ts`.
+
+## 🎨 Design Philosophy
+
+This portfolio emphasizes:
+
+- **Simplicity**: Clean, uncluttered design that puts content first
+- **Performance**: Fast loading times and smooth interactions
+- **Accessibility**: Semantic HTML and keyboard navigation support
+- **Mobile-First**: Responsive design that works on all devices
+
+## 📱 Sections
+
+- **Hero**: Introduction with professional photo and bio
+- **Experience**: Timeline of professional roles and achievements
+- **Projects**: Showcase of featured work with live demos
+- **Contact**: Direct links to email and LinkedIn
+- **Music**: Currently listening to music via Spotify integration
+
+## 🤝 Contributing
+
+While this is a personal portfolio, suggestions and improvements are welcome! Feel free to:
+
+- Open an issue for bugs or feature requests
+- Submit a pull request for improvements
+- Share feedback on design or functionality
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+- **Email**: [babalolakayode44@gmail.com](mailto:babalolakayode44@gmail.com)
+- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/kayodedev/)
+- **Portfolio**: [kayodedev.com](https://kayodedev.com)
+
+---
+
+Built with ❤️ by [Kayode Babalola](https://kayodedev.com)
