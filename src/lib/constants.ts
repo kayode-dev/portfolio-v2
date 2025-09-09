@@ -7,7 +7,7 @@ export const PROJECTS: ProjectProps[] = [
   {
     title: "picaso.mp3",
     description:
-      "Audio processing tool where users can either upload an audio file or record their audio and the track is converted to a color palette based on the spectral kurtosis, spectral spread and kurtosis of the audio at different intervals.",
+      "Audio processing tool where users can either upload an audio file or record their audio and the track is converted to a color palette based on the spectral kurtosis, spectral spread and centroid of the audio at different intervals.",
     image: picaso,
     liveUrl: "https://picaso.kayodedev.com/",
     stacks: ["React", "Meyda", "NextJS"],
